@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Assignment Portal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments</title>
   <style>
     body {
       margin: 0;
       font-family: 'Outfit', sans-serif;
-      background: url('bg.jpg') no-repeat center center / cover;
+      background: url('') no-repeat center center / cover;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -17,8 +16,8 @@
       overflow: hidden;
       position: relative;
     }
-
-    .overlay {
+    
+  .overlay {
       position: absolute;
       inset: 0;
       background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
@@ -38,7 +37,6 @@
       width: 90%;
       animation: slideIn 1s ease-out;
     }
-
     @keyframes slideIn {
       from {
         transform: translateY(30px);
@@ -61,47 +59,51 @@
       color: #e0e0e0;
     }
 
-    .nav-buttons {
+
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #4a148c;
+    }
+
+    .button-container {
       display: flex;
-      flex-direction: column;
-      gap: 15px;
+      gap: 30px;
     }
 
-    .nav-buttons a {
-      text-decoration: none;
-      background: linear-gradient(135deg, #ff00cc, #3333ff);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 12px;
-      text-align: center;
+    .btn {
+      padding: 15px 30px;
+      font-size: 1.2em;
       font-weight: bold;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      color: white;
+      background: linear-gradient(to right, #7b1fa2, #512da8);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
     }
 
-    .nav-buttons a:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(255, 0, 200, 0.4);
-    }
-
-    @media (max-width: 500px) {
-      .card {
-        padding: 30px 25px;
-      }
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.25);
     }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
   <div class="card">
-    <h1>Web Development Assignments</h1>
-    <p>Name: <strong>Bhagyashri Ganesh Patil</strong><br>Roll No: <strong>137</strong></p>
+  <h1>Web Developemnt Assignments</h1>
+  <p>Name: <strong>Bhagyashri Ganesh Patil</strong><br>Roll No: <strong>137</strong></p>
 
-    <div class="nav-buttons">
-      <a href="/HTML/html_assignment.html" class="nav-buttons">HTML Assignments</a>
-      <a href="/CSS/css_assignment.html" class="nav-buttons">CSS Assignments</a>
-      <a href="/XML/xml_assignment.xml" class="nav-buttons">XML Assignments</a>
-    </div>
+  <div class="button-container">
+    <a href="/HTML/html_index.html" class="btn">HTML Assignments</a>
+    <a href="/CSS/css_index.html" class="btn">CSS Assignments</a>
+    <a href="/XML/xml_index.html" class="btn">XML Assignments</a>
+  </div>
+
   </div>
 </body>
 </html>
