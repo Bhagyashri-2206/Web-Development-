@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignments Hub</title>
+  <title>HTML Assignments</title>
   <style>
     body {
       margin: 0;
@@ -39,6 +37,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       gap: 15px;
+      margin-bottom: 20px;
     }
 
     .btn {
@@ -58,17 +57,33 @@
       transform: translateY(-3px);
       background: #e0e0e0;
     }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: rgba(0,0,0,0.3);
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: rgba(0,0,0,0.5);
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>HTML Assignments</h1>
     <div class="btn-grid">
-        <a class="btn" href="pr2.html">Assignment 1</a>
+      <a class="btn" href="pr2.html">Assignment 1</a>
       <a class="btn" href="pr3.html">Assignment 2</a>
       <a class="btn" href="pr4.html">Assignment 3</a>
       <a class="btn" href="pr5.html">Assignment 4</a>
     </div>
+    <a class="back-link" href="/index.html">← Back to Portal</a>
   </div>
 </body>
 </html>
