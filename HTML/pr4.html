@@ -2,21 +2,57 @@
 <html>
 <head>
   <title>My Captured Images</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .image-item {
+      flex: 1 1 calc(25% - 20px); /* 4 items per row */
+      text-align: center;
+    }
+    .image-item:nth-child(n+5) {
+      flex: 1 1 calc(50% - 20px); /* 2 items in second row */
+    }
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
   <h1>Images Captured by Me</h1>
 
-  <img src="rose.jpg" alt="Image 1" width="500">
-  <h2>Rose</h2>
-  <img src="sky.jpg" alt="Image 2" width="500">
-  <h2>Sky</h2>
-  <img src="home.jpg" alt="Image 3" width="500">
-  <h2>Bavdekar Wada</h2>
-  <img src="anuskrura_ghat.jpg" alt="Image 4" width="500">
-  <h2>Nature</h2>
-  <img src="travel.jpg" alt="Image 5" width="500">
-  <h2>Travel</h2>
+  <div class="gallery">
+    <div class="image-item">
+      <img src="rose.jpg" alt="Image 1">
+      <h2>Rose</h2>
+    </div>
+    <div class="image-item">
+      <img src="sky.jpg" alt="Image 2">
+      <h2>Sky</h2>
+    </div>
+    <div class="image-item">
+      <img src="home.jpg" alt="Image 3">
+      <h2>Bavdekar Wada</h2>
+    </div>
+    <div class="image-item">
+      <img src="anuskrura_ghat.jpg" alt="Image 4">
+      <h2>Nature</h2>
+    </div>
+    <div class="image-item">
+      <img src="travel.jpg" alt="Image 5">
+      <h2>Travel</h2>
+    </div>
+    <div class="image-item">
+      <img src="extra.jpg" alt="Image 6">
+      <h2>Extra</h2>
+    </div>
+  </div>
 
 </body>
 </html>
