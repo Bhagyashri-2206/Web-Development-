@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+</head>
+<body bgcolor="lavender">
+
+    <h2 align="center" style="color: darkblue;">Employee Registration</h2>
+
+    <form bgcolor="white">
+        <table align="center" bgcolor="white" cellpadding="10" border="0">
+            <tr>
+                <td>Employee ID:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="tel" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td>
+                    <select required>
+                        <option selected disabled>Choose...</option>
+                        <option>HR</option>
+                        <option>IT</option>
+                        <option>Finance</option>
+                        <option>Marketing</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Position:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Salary:</td>
+                <td><input type="number" required></td>
+            </tr>
+            <tr>
+                <td>Joining Date:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea rows="3" cols="30" required></textarea></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
