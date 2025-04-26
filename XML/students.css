@@ -1,25 +1,82 @@
 /* Style for the students XML */
 students {
     display: block;
-    font-family: Arial, sans-serif;
-    background-color: #e3f2fd;
-    padding: 15px;
+    font-family: "Arial", sans-serif;
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 85%;
+    margin: 20px auto;
 }
 
 /* Style each student */
 student {
     display: block;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #0277bd;
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid #0277bd; /* Blue border */
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+student:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Style elements inside student */
-id, name, age, department, email,contact {
+id, name, age, department, email, contact {
     display: block;
     font-weight: bold;
-    color: #01579b;
-    margin: 5px 0;
+    color: #01579b; /* Dark blue color */
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+name {
+    font-size: 1.3em;
+    color: #0288d1; /* Lighter blue for the name */
+    text-transform: capitalize;
+}
+
+age {
+    font-size: 1.1em;
+    color: #0288d1;
+}
+
+department {
+    font-size: 1em;
+    color: #388e3c; /* Green for the department */
+}
+
+email {
+    font-size: 1em;
+    color: #1976d2; /* Lighter blue for the email */
+}
+
+contact {
+    font-size: 1em;
+    color: #d32f2f; /* Red for the contact info */
+}
+
+/* Add spacing between student sections */
+student > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+/* Style the header for the student list */
+students > h1 {
+    font-size: 2em;
+    color: #0277bd;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add subtle hover effect to student ID */
+id:hover {
+    color: #0288d1;
+    text-decoration: underline;
 }
