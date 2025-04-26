@@ -1,70 +1,75 @@
 /* Style for the books container */
 books {
-    color: white;
-    background-color: #ff99cc; 
-    width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: "Arial", sans-serif;
+    display: block;
+    color: #333333; 
+    background-color: #fef6fb; 
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", "Arial", sans-serif;
 }
 
 /* Style for the heading */
 heading {
-    color: #388e3c; 
-    font-size: 40px;
-    background-color: #b3e5fc; 
-    padding: 10px;
+    color: #4caf50; 
+    font-size: 42px;
+    background-color: #d1f7ff; 
+    padding: 15px 20px;
     text-align: center;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
-/* Flex styling for all elements inside heading, title, author, publisher, edition */
-heading, title, author, publisher, edition {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
+/* Flex styling for book details */
+heading, title, author, publisher, edition, price {
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* Style for the title */
 title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #d32f2f; 
-    text-transform: capitalize;
-    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ff6f61; 
+    margin-bottom: 8px;
 }
 
 /* Style for the author */
 author {
     font-size: 20px;
     font-style: italic;
-    color: #1976d2; 
-    margin-right: 20px;
+    color: #4fa3d1; 
 }
 
 /* Style for the publisher */
 publisher {
     font-size: 18px;
-    color: #0288d1; 
+    color: #7e57c2; 
 }
 
 /* Style for the edition */
 edition {
     font-size: 18px;
-    color: #388e3c; 
-    font-weight: normal;
+    color: #81c784;
 }
 
-/* Hover effect for the book items */
+/* Style for the price */
+price {
+    font-size: 18px;
+    color: #ffb74d; 
+    font-weight: 500;
+}
+
+/* Hover effect for books container */
 books:hover {
-    background-color: #ff80c0;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    background-color: #fce4ec; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Adding spacing between items inside the book container */
+/* Slight spacing between each block of book details */
 books > *:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 25px;
 }
