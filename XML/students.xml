@@ -3,18 +3,18 @@
 <students>
     <student>
         <id>101</id>
-        <name>John Doe</name>
+        <name>Priyanka Patil</name>
         <age>20</age>
         <department>Computer Science</department>
-        <email>johndoe@example.com</email>
+        <email>piyu22@gmail.com</email>
         <contact>7329233900</contact>
     </student>
     <student>
         <id>102</id>
-        <name>Jane Smith</name>
+        <name>Kiara Sarnaik</name>
         <age>21</age>
         <department>Information Technology</department>
-        <email>janesmith@example.com</email>
+        <email>kiara45@gmail.com</email>
         <contact>8830873850</contact>
 
     </student>
