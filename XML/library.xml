@@ -15,4 +15,12 @@
         <published_year>2020</published_year>
         <available_copies>3</available_copies>
     </book>
+     <book>
+        <id>003</id>
+        <title>Pride and Prejudice</title>
+        <author>Jane Austen</author>
+        <published_year>2018</published_year>
+        <available_copies>1</available_copies>
+    </book>
+
 </library>
