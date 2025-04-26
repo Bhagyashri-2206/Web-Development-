@@ -3,17 +3,28 @@ library {
     display: block;
     font-family: "Georgia", serif;
     background-color: #fff3e0;
-    padding: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 20px auto;
 }
 
 /* Style each book */
 book {
     display: block;
-    margin: 10px;
-    padding: 10px;
+    margin: 15px 0;
+    padding: 20px;
     border: 2px solid #ff9800;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Style elements inside book */
@@ -21,5 +32,34 @@ id, title, author, published_year, available_copies {
     display: block;
     font-weight: bold;
     color: #e65100;
-    margin: 5px 0;
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+title {
+    font-size: 1.3em;
+    color: #d32f2f;
+    text-transform: capitalize;
+}
+
+author {
+    font-size: 1.1em;
+    color: #1976d2;
+}
+
+published_year {
+    font-size: 1em;
+    color: #388e3c;
+}
+
+available_copies {
+    font-size: 1em;
+    color: #0288d1;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Add spacing between book sections */
+book > *:not(:first-child) {
+    margin-top: 10px;
 }
