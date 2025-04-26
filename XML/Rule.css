@@ -1,17 +1,70 @@
-books { 
-	color: white; 
-	background-color : pink; 
-	width: 100%; 
-} 
-heading { 
-	color: green; 
-	font-size : 40px; 
-	background-color : powderblue; 
-} 
-heading, title, author, publisher, edition { 
-	display : flex 
-} 
-title { 
-	font-size : 25px; 
-	font-weight : bold; 
-} 
+/* Style for the books container */
+books {
+    color: white;
+    background-color: #ff99cc; 
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+/* Style for the heading */
+heading {
+    color: #388e3c; 
+    font-size: 40px;
+    background-color: #b3e5fc; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Flex styling for all elements inside heading, title, author, publisher, edition */
+heading, title, author, publisher, edition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Style for the title */
+title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d32f2f; 
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+/* Style for the author */
+author {
+    font-size: 20px;
+    font-style: italic;
+    color: #1976d2; 
+    margin-right: 20px;
+}
+
+/* Style for the publisher */
+publisher {
+    font-size: 18px;
+    color: #0288d1; 
+}
+
+/* Style for the edition */
+edition {
+    font-size: 18px;
+    color: #388e3c; 
+    font-weight: normal;
+}
+
+/* Hover effect for the book items */
+books:hover {
+    background-color: #ff80c0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Adding spacing between items inside the book container */
+books > *:not(:first-child) {
+    margin-top: 20px;
+}
