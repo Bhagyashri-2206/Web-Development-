@@ -3,17 +3,28 @@ employees {
     display: block;
     font-family: "Tahoma", sans-serif;
     background-color: #e8f5e9;
-    padding: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 20px auto;
 }
 
 /* Style each employee */
 employee {
     display: block;
-    margin: 10px;
-    padding: 10px;
+    margin: 15px 0;
+    padding: 20px;
     border: 2px solid #2e7d32;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+employee:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Style elements inside employee */
@@ -21,5 +32,48 @@ id, name, position, department, salary {
     display: block;
     font-weight: bold;
     color: #1b5e20;
-    margin: 5px 0;
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+name {
+    font-size: 1.3em;
+    color: #388e3c;
+    text-transform: capitalize;
+}
+
+position {
+    font-size: 1.1em;
+    color: #0288d1;
+}
+
+department {
+    font-size: 1em;
+    color: #1976d2;
+}
+
+salary {
+    font-size: 1.1em;
+    color: #d32f2f;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Add spacing between employee sections */
+employee > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+/* Style the header for employee list */
+employees > h1 {
+    font-size: 2em;
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add subtle hover effect to employee ID */
+id:hover {
+    color: #388e3c;
+    text-decoration: underline;
 }
